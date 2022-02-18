@@ -14,18 +14,18 @@
     <header class="w-full bg-gray-300 h-40 header">
         <nav>
             <ul>
-                <a href="/products"><li>Products</li></a>
-                <a href="/ejs/add"><li>Add new product</li></a>
+                <a href="/"><li>Home</li></a>
+                <a href="/add"><li>Add new product</li></a>
             </ul>
         </nav>
     </header>
     <h1>Welcome to This.</h1>
     <div id="app">
-        <ul>
-            <% products.forEach(function(product) { %>
-            <li> <%=product.name %> </li>
-            <% }) %>
-        </ul>
+        <% products.forEach(function(product) { %>
+        <img src= <%=product.thumbnail %> style=width=200></img>
+        <div> <%=product.price %> </div>
+        <div> <%=product.name %> </div>
+        <% }) %>
     </div>
 </body>
 </html>
